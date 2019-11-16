@@ -1,0 +1,78 @@
+$medium: 640px;
+$large: 1024px;
+$primary-color: #e25050;
+$text-color: #202020;
+$secondary-color: #777;
+
+$body-font-family: Oswald, sans-serif;
+$text-font-family: OpenSans, sans-serif;
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Oswald:400,700&display=swap');
+@import "normalize";
+@import "layout";
+@import "elements";
+
+
+
+html {
+	scroll-behavior: smooth;
+ }
+ body{
+	 font: 300 12px/1.5 $body-font-family;
+	 color: $text-color;
+	}
+	
+	p{
+		margin: 0;
+	}
+
+	h1,h2,h3,h4,h5,h6{
+		margin: 0;
+	}
+
+a {
+	color: $primary-color;
+	text-decoration: none;
+ 
+	&hover {
+	  color: #fff;
+	}
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+	margin: 0;
+ }
+ h1 {
+	font-size: 21px;
+	font-weight: 700;
+ 
+	@media screen and (min-width: $medium) {
+	  font-size: 30px;
+	}
+ }
+ h2 {
+	 font-size: 24px;
+
+ }
+ h3 {
+	
+ }
+/* Layout */
+.ba-container{
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1230px;
+	width: 100%;
+}
+@import "header";
+@import "section-intro";
+@import "section-fitness";
+@import "section-trainers";
+@import "section-gallery";
+

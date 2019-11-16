@@ -1,0 +1,22 @@
+.ba-section-gallery{
+	padding: 60px 0;
+	&__inner {
+		color: $text-color;
+		font-weight: 700;
+		line-height: 21px;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 70px;
+		position: relative;
+  
+		&:after {
+		  content: '';
+		  height: 1px;
+		  width: 45px;
+		  background: $text-color;
+		  position: absolute;
+		  bottom: -9px;
+		  left: calc(50% - 22.5px);
+		}
+	 }
+}

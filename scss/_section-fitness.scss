@@ -1,0 +1,40 @@
+.ba-section-fitness {
+  margin-bottom: 70px;
+  &__inner {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 60px 0 54px 0;
+
+    p {
+      font-size: 16px;
+      color: rgba($text-color, 0.4);
+    }
+
+    span {
+      color: $primary-color;
+    }
+  }
+}
+
+.ba-post-fitness {
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 263px;
+	 margin: 0 auto;
+    margin-top: 30px;
+	
+  }
+  &__title {
+    padding-left: 15px;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+  }
+  &__text {
+    color: $secondary-color;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+}

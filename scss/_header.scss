@@ -1,0 +1,142 @@
+
+.ba-header{
+	background: $text-color;
+	z-index:1;
+	background-size:cover;
+}
+.ba-menu{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+
+	a{
+		text-decoration: none;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+
+	@media screen and (min-width:$large){
+		display: flex;
+		align-items: center;
+
+		a{
+			padding: 10px 15px;
+			position: relative;
+			display: block;
+			
+			&:hover{
+				background: $primary-color;
+			}
+		}
+		li + li{
+			margin-left: 25px;
+		}
+	}
+}
+
+.ba-main-nav{
+	position: relative;
+
+	@media screen and (min-width:$large){
+		display: flex;
+		
+	}
+	@media screen and (max-width:$large - 1px){
+		position: fixed;
+		height: 100vh;
+		width: 100vw;
+		left: 0;
+		top: 0;
+		background-color: rgba(#000, 0.8);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		
+
+		opacity: 0;
+		visibility: hidden;
+		transform: scale(0.8);
+		transition: 0.2s;
+		transition-property: transform, opacity, visibility;
+
+		&.active{
+			opacity: 1;
+			visibility: visible;
+			transform: scale(1);
+		}
+
+		.ba-menu{
+			a{
+				font-size: 20px;
+				display: block;
+				margin-bottom: 25px;
+			}
+		}
+	}
+}
+.ba-button--phone{
+	position: relative;
+	background: $primary-color;
+		width: 177px;
+		padding: 10px 0px 10px 60px;
+		top: 73px;
+		right: 170px;	
+	svg{
+		background: #bb4244;
+			width: 37px;
+			height: 37px;
+			padding: 12px;
+			margin-right: 25px;
+		
+		@media screen and (min-width:$large){
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+}
+.ba-menu-toggle{
+	border:none;
+	background: none;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+	min-width: initial;
+	padding: 0;
+	height: auto;
+	line-height: 1;
+	
+	&:hover, &:focus{
+		background: none;
+		color: $primary-color;
+		border: none;
+	}
+}
+.ba-menu-toggle svg{
+	fill:currentColor;
+}
+
+@media (min-width: $large){
+	.ba-menu-toggle{
+		display: none;
+	}
+}
+
+.ba-logo img{
+	display: block;
+}
+
+.ba-header-bar{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 35px 0;
+}
+
+
