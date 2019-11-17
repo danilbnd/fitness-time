@@ -40,16 +40,27 @@
     padding: 27px 30px;
   }
   
-
+  
   &:after {
     content: "";
     position: absolute;
     top: 14%;
     right: 0;
     width: 1px;
-    height: 122px;
-    background-color: rgba(#fff, 0.4);
-  }
+    height: 102px;
+	 background-color: rgba(#fff, 0.4);
+	}
+		 @media screen and (min-width:$large){
+			&:after {
+				content: "";
+				position: absolute;
+				top: 14%;
+				right: 0;
+				width: 1px;
+				height: 122px;
+				background-color: rgba(#fff, 0.4);
+		 }
+		}
   &--white{
 	&:after {
 		content: "";
@@ -57,8 +68,19 @@
 		top: 14%;
 		right: 0;
 		width: 1px;
-		height: 122px;
+		height: 102px;
 		background-color: #fff;
+	 }
+	 @media screen and (min-width:$large){
+		&:after {
+			content: "";
+			position: absolute;
+			top: 14%;
+			right: 0;
+			width: 1px;
+			height: 122px;
+			background-color: #fff;
+		 }
 	 }
   }
 

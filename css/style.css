@@ -975,16 +975,34 @@ h3 {
     top: 14%;
     right: 0;
     width: 1px;
-    height: 122px;
+    height: 102px;
     background-color: rgba(255, 255, 255, 0.4); }
+  @media screen and (min-width: 1024px) {
+    .ba-price-cost:after {
+      content: "";
+      position: absolute;
+      top: 14%;
+      right: 0;
+      width: 1px;
+      height: 122px;
+      background-color: rgba(255, 255, 255, 0.4); } }
   .ba-price-cost--white:after {
     content: "";
     position: absolute;
     top: 14%;
     right: 0;
     width: 1px;
-    height: 122px;
+    height: 102px;
     background-color: #fff; }
+  @media screen and (min-width: 1024px) {
+    .ba-price-cost--white:after {
+      content: "";
+      position: absolute;
+      top: 14%;
+      right: 0;
+      width: 1px;
+      height: 122px;
+      background-color: #fff; } }
   .ba-price-cost img {
     display: block;
     max-width: 100%;
