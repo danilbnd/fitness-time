@@ -1,36 +1,20 @@
-.ba-section-trainers {
-  background: #333 url(../img/bg-trainer.jpg) no-repeat 50%;
-  background-size: cover;
-  padding: 60px 0;
-  &__inner {
+
+.ba-trainers-title {
     color: #fff;
-    font-weight: 700;
-    line-height: 21px;
-    text-transform: uppercase;
+	 letter-spacing: -0.7px;
     text-align: center;
 	 margin-bottom: 70px;
 	 position: relative;
-
-	 &:after {
-      content: '';
-      height: 1px;
-      width: 45px;
-      background: #fff;
-      position: absolute;
-      bottom: -9px;
-      left: calc(50% - 22.5px);
-    }
   }
-}
 
-.ba-post-trainers {
-  &__item {
+
+.ba-trainers-box{
     background: #ffffff;
 	 min-height: 315px;
 	 max-width: 270px;
 	 margin: 0 auto;
 	 margin-bottom: 20px;
-  }
+  
 
   &__title {
     color: $text-color;
@@ -38,16 +22,14 @@
     font-weight: 700;
     line-height: 24px;
 	 text-transform: uppercase;
-	 padding-top: 22px;
-	 padding-left: 20px;
-	 position: relative;
-
-	
+	 padding-top: 18px;
+	 padding-left: 18px;
   }
 
   &__subtitle {
 	 color: $secondary-color;
-	 padding-left: 20px;
-	 padding-bottom: 22px;
+	 font-size: 12px;
+	 padding-left: 18px;
+	 line-height:12px;
   }
 }

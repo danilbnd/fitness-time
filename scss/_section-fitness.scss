@@ -1,40 +1,44 @@
-.ba-section-fitness {
-  margin-bottom: 70px;
-  &__inner {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    padding: 60px 0 54px 0;
+.ba-fitness-title {
+  text-align: center;
+  margin-bottom: 21px;
 
-    p {
-      font-size: 16px;
-      color: rgba($text-color, 0.4);
-    }
+  h2 {
+	 font-size: 30px;
+	 margin-bottom: 10px;
+  }
+  p {
+    color: #a2a2a2;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 30px;
+    letter-spacing: 1px;
+    font-family: serif;
+  }
 
-    span {
-      color: $primary-color;
-    }
+  span {
+    color: $primary-color;
   }
 }
+.ba-post-fitness-item {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 263px;
+  margin: 0 auto;
+  margin-top: 24px;
 
-.ba-post-fitness {
-  &__item {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 263px;
-	 margin: 0 auto;
-    margin-top: 30px;
-	
-  }
   &__title {
-    padding-left: 15px;
-    text-transform: uppercase;
-    margin-bottom: 19px;
+	 padding-left: 12px;
+	 text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 10px;
   }
   &__text {
     color: $secondary-color;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 21px;
+    font-size: 14px;
+    font-weight: 300;
+	 line-height: 21px;
+	 letter-spacing: 1px;
   }
 }

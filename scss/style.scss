@@ -7,72 +7,162 @@ $secondary-color: #777;
 $body-font-family: Oswald, sans-serif;
 $text-font-family: OpenSans, sans-serif;
 
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Oswald:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Oswald:300,400,700&display=swap");
 @import "normalize";
 @import "layout";
 @import "elements";
 
-
-
 html {
-	scroll-behavior: smooth;
- }
- body{
-	 font: 300 12px/1.5 $body-font-family;
-	 color: $text-color;
-	}
-	
-	p{
-		margin: 0;
-	}
+  scroll-behavior: smooth;
+}
+body {
+  font: 300 13px/1.5 $body-font-family;
+  color: $text-color;
+}
 
-	h1,h2,h3,h4,h5,h6{
-		margin: 0;
-	}
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 
 a {
-	color: $primary-color;
-	text-decoration: none;
- 
-	&hover {
-	  color: #fff;
-	}
- }
+  color: $primary-color;
+  text-decoration: none;
 
- h1,
- h2,
- h3,
- h4,
- h5,
- h6 {
-	margin: 0;
- }
- h1 {
-	font-size: 21px;
-	font-weight: 700;
- 
-	@media screen and (min-width: $medium) {
-	  font-size: 30px;
-	}
- }
- h2 {
-	 font-size: 24px;
+  &hover {
+    color: #fff;
+  }
+}
 
- }
- h3 {
-	
- }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+h1 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 24px;
+
+  @media screen and (min-width: $medium) {
+    font-size: 30px;
+  }
+}
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  text-transform: uppercase;
+  @media screen and (min-width: $medium) {
+    font-size: 24px;
+  }
+}
+h3 {
+  font-size: 14px;
+  @media screen and (min-width: $medium) {
+    font-size: 18px;
+  }
+}
 /* Layout */
-.ba-container{
-	padding-left: 15px;
-	padding-right: 15px;
-	max-width: 1230px;
-	width: 100%;
+.ba-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1230px;
+  width: 100%;
 }
 @import "header";
 @import "section-intro";
 @import "section-fitness";
 @import "section-trainers";
 @import "section-gallery";
+@import "section-price";
 
+.ba-section {
+  padding: 60px 0;
+  &--intro {
+    background: #333 url(../img/bg-intro.jpg) no-repeat 50%;
+    background-size: cover;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 217px 0;
+    min-height: 100vh;
+    @media screen and (min-width: $medium) {
+      background: #333 url(../img/bg-intro.jpg) 60% no-repeat;
+      background-size: cover;
+    }
+  }
+  &--trainers {
+    background: #333 url(../img/bg-trainer.jpg) no-repeat 50%;
+    background-size: cover;
+  }
+  &--gallery {
+  }
+
+  &--price {
+    background: $primary-color;
+  }
+  &--partners {
+    @media screen and (min-width: $large) {
+      padding-bottom: 68px;
+    }
+  }
+  &--footer {
+  }
+}
+
+.ba-title-border {
+  &--white:after {
+    content: "";
+    height: 1px;
+    width: 45px;
+    background: #fff;
+    position: absolute;
+    bottom: -9px;
+    left: calc(50% - 22.5px);
+  }
+  &--black:after {
+    content: "";
+    height: 1px;
+    width: 45px;
+    background: $text-color;
+    position: absolute;
+    bottom: -9px;
+    left: calc(50% - 22.5px);
+  }
+}
+
+.ba-section-partners {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  img {
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: $large) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img + img {
+      padding-left: 60px;
+    }
+  }
+}
+.ba-partners-title {
+  position: relative;
+  text-align: center;
+  margin-bottom: 70px;
+}
