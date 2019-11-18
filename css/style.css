@@ -827,7 +827,7 @@ h4 {
 .ba-button--phone {
   position: absolute;
   right: 0;
-  top: 73px;
+  top: 72px;
   height: 37px;
   background: #e25050;
   line-height: 37px;
@@ -846,7 +846,8 @@ h4 {
     left: -30px; }
   @media screen and (min-width: 1024px) {
     .ba-button--phone {
-      top: 104px; } }
+      top: 104px;
+      right: 0; } }
 
 .ba-menu-toggle {
   border: none;
@@ -876,6 +877,7 @@ h4 {
   padding-top: 5px; }
 
 .ba-header-bar {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
