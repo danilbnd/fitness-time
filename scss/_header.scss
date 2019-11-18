@@ -1,4 +1,8 @@
 .ba-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background: $text-color;
   z-index: 1;
   background-size: cover;
@@ -89,7 +93,7 @@
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-	
+
   &:before {
     content: "";
     background: #bb4244
@@ -141,3 +145,4 @@
   align-items: flex-start;
   padding: 35px 0;
 }
+
