@@ -111,7 +111,7 @@
     color: #ffffff;
     font-size: 26px;
     font-weight: 700;
-    line-height: 22px;
+    line-height: 1;
     text-transform: uppercase;
     letter-spacing: 1px;
     display: flex;
@@ -121,7 +121,8 @@
   }
   &__sup {
     font-size: 12px;
-    padding-bottom: 11px;
+	 display: flex;
+	 justify-content: flex-start;
   }
 }
 

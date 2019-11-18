@@ -18,12 +18,15 @@ button,
 }
 .ba-button--form {
   position: relative;
+  min-width: 100%;
+  text-transform: uppercase;
   min-height: 39px;
   line-height: 39px;
   padding-left: 17px;
   padding-right: 36px;
-  letter-spacing: 1px;
+  letter-spacing: 1.3px;
   background: $primary-color;
+  border: none;
 
 	display: flex;
 	justify-content: center;

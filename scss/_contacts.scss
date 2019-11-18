@@ -4,22 +4,39 @@
   align-items: center;
   position: relative;
   text-align: center;
-  //   &:after {
-  //     content: "";
-  //     height: 1px;
-  //     min-width: 1230px;
-  //     background: #323232;
-  //     position: absolute;
-  //     top: 75px;
-  //     left: 0;
-  //   }
+  &:after {
+    content: "";
+    height: 1px;
+    min-width: 25%;
+    background: #323232;
+    position: absolute;
+    top: 140px;
+    left: 40%;
+
+    @media screen and (min-width: $medium) {
+      min-width: 50%;
+      top: 115px;
+      left: 25%;
+    }
+    @media screen and (min-width: $large) {
+      min-width: 100%;
+      top: 70px;
+      left: 0;
+    }
+  }
   @media screen and (min-width:$medium){
-	display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 95px;
-	
-}
+	  display: flex;
+	  flex-direction: column;
+	  
+  }
+
+  @media screen and (min-width: $large) {
+	 display: flex;
+	 flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 65px;
+  }
   svg {
     fill: #fff;
 
@@ -28,30 +45,50 @@
     }
   }
 }
-.ba-social-text {
+.ba-social-ibox {
   font-family: $text-font-family;
   line-height: 22px;
   margin-bottom: 20px;
-  @media screen and (min-width:$medium){
-	  margin-bottom: 0;
-	  text-align: left;
-	  padding-left: 30px;
-	  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @media screen and (min-width: $large) {
+	 display: flex;
+	 flex-direction: row;
+	 text-align: left;
   }
-  
 
   &__icon {
-    padding-left: 25px;
-    padding-right: 16px;
-    text-align: center;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+	 align-items: center;
+	 margin-bottom: 10px;
+	 @media screen and (min-width:$large){
+		 margin-bottom: 0;
+		 margin-right: 15px;
+	 }
   }
-  span {
-    color: rgba(#fff, 0.3);
+
+  &__text {
+	 min-width: 100%;
+	
+    span {
+      color: rgba(#fff, 0.3);
+    }
   }
 }
 .ba-social {
   svg {
-    margin-left: 15px;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -60,32 +97,52 @@
   text-align: center;
   margin: 0 auto 20px;
 
-  @media screen and (min-width:$medium){
-	  text-align: left;
+  @media screen and (min-width: $large) {
+    text-align: left;
   }
+  ul {
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+
+  li + li {
+    padding-top: 4px;
+  }
+
   &__title {
     font-family: $body-font-family;
     color: #fff;
-	 margin-bottom: 30px;
-	 text-align: center;
-	 @media screen and (min-width:$medium){
-		 text-align: left;
-		 
-	 }
+    margin-bottom: 20px;
+    text-align: center;
+    @media screen and (min-width: $large) {
+      text-align: left;
+    }
   }
   p {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
+    line-height: 21px;
+    text-align: center;
+	 width: 100%;
+	 @media screen and (min-width:$large){
+		 text-align: left;
+		 width: 80%;
+	 }
   }
 
   &__link {
     display: block;
-	 color: rgba(#fff, 0.6);
+    color: rgba(#fff, 0.6);
 
     &:hover {
       color: $primary-color;
     }
 
     svg {
+      width: 11px;
+		height: 11px;
+		margin-right: 5px;
       fill: #fff;
       &:hover {
         fill: $primary-color;
@@ -94,33 +151,29 @@
   }
 }
 
-.ba-form-input {
-  padding-left: 212px;
-}
-
 .ba-contact-form {
   margin-bottom: 40px;
 
-  @media screen and (min-width: $medium) {
-    margin-bottom: 102px;
+  @media screen and (min-width: $large) {
+    margin-bottom: 75px;
   }
 }
 
 .ba-form-input {
-  min-width: 212px;
+  min-width: 100%;
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  @media screen and (min-width: $medium) {
-    min-width: 212px;
+  @media screen and (min-width: $large) {
+    min-width: 100%;
   }
 }
 .ba-form-message {
   margin: 0px 15px 15px 0px;
-  min-width: 345px;
+  min-width: 100%;
   min-height: 122px;
-  @media screen and (min-width: $medium) {
-    min-width: 441px;
+  @media screen and (min-width: $large) {
+    min-width: 100%;
     min-height: 122px;
   }
 }
@@ -128,9 +181,14 @@
 .ba-text-email {
   display: flex;
   justify-content: center;
-  margin: 0 auto 20px;
+  margin: 0 auto;
+
   @media screen and (min-width: $medium) {
-    margin-left: 0px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: $large) {
+    margin-left: 0;
     display: flex;
     justify-content: flex-start;
   }

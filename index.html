@@ -37,10 +37,10 @@
 						<li><a href="#partners">Partners </a></li>
 						<li><a href="#contacts">Contact</a></li>
 					</ul>
-					<a href="tel:18005551234" class="ba-button ba-button--phone">
-						1-800-555-1234
-					</a>
 				</nav>
+						<a href="tel:18005551234" class="ba-button ba-button--phone">
+							1-800-555-1234
+						</a>
 			</div>
 			<!-- /.ba-header-bar -->
 		</div>
@@ -398,7 +398,7 @@
 			</div>
 			<!-- /.ba-container -->
 		</section>
-		<section id="contacts" class="ba-section ba-section--partners">
+		<section id="partners" class="ba-section ba-section--partners">
 			<div class="ba-container">
 
 				<h2 class="ba-partners-title ba-title-border--black">Partners</h2>
@@ -419,23 +419,29 @@
 		</section>
 
 
-		<section class="ba-section ba-section--contacts">
+		<section id="contacts" class="ba-section ba-section--contacts">
 
 			<div class="ba-container">
 
 				<div class="ba-row ba-socials-box">
 					<div class="ba-small-12 ba-medium-6">
-						<p class="ba-social-text">
-							<a href="https://twitter.com/" class="ba-social-text__icon">
-								<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="27" height="27"
-									viewBox="0 0 32 32">
-									<use xlink:href="#icon-twitter" />
-								</svg>
-							</a>
-							RT @collis: Trade growth ideas with other founders. Look for ways to cross promote. Small startups
-							<br>today may be big friends later. (9/10) <span class="ba-post-days__ago">2 days
-								ago</span>
-						</p>
+						<div class="ba-social-ibox">
+							<div class="ba-social-ibox__icon">
+								<a href="https://twitter.com/">
+									<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="27" height="27"
+										viewBox="0 0 32 32">
+										<use xlink:href="#icon-twitter" />
+									</svg>
+								</a>
+							</div>
+							<!-- /.ba-social-text__icon -->
+							<div class="ba-social-ibox__text">
+								RT @collis: Trade growth ideas with other founders. Look for ways to cross promote. Small startups<br>
+								today may be big friends later. (9/10) <span>2 days ago</span>
+							</div>
+							<!-- /.ba-social-ibox__text -->
+							</div>
+							<!-- /.ba-social-ibox -->
 					</div>
 					<!-- /.ba-small-12 ba-medium-6 -->
 					<div class="ba-social ba-small-12 ba-medium-6">
@@ -489,18 +495,23 @@
 						<h4 class="ba-info-text__title">contact info</h4>
 						<p>Ut volutpat consectetur aliquam. Curabitur auctor in nis ulum ornare. Sed consequat, augue
 							condimentum fermentum gravida, metus elit vehicula dui.</p>
-
-						<a class="ba-info-text__link" href="tel:+1800123456789">
-							<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 32 32">
-								<use xlink:href="#icon-mobile"></use>
-							</svg>
-							+1800 1234 56789
-						</a>
-						<a class="ba-info-text__link" href="mailto:support@website.com">
-								
-								<svg  width="12" height="9" viewBox="0 0 12 9"><path d="M8.01631,3.99698l3.98171,-3.54639v8.54205zM0.04738,-0.00004h11.92077l-5.96023,5.27221zM6.00638,5.78813l1.74814,-1.55376l3.7985,4.76294h-11.09036l3.79835,-4.71607zM0.00188,8.99264v-8.54205l3.98171,3.54639z"></path></svg>
-							support@website.com
-						</a>
+							<ul>
+								<li>
+									<a class="ba-info-text__link" href="tel:+1800123456789">
+										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 32 32">
+											<use xlink:href="#icon-mobile"></use>
+										</svg>
+										+1800 1234 56789
+									</a>
+								</li>
+								<li>
+									<a class="ba-info-text__link" href="mailto:support@website.com">
+											
+											<svg  width="12" height="9" viewBox="0 0 12 9"><path d="M8.01631,3.99698l3.98171,-3.54639v8.54205zM0.04738,-0.00004h11.92077l-5.96023,5.27221zM6.00638,5.78813l1.74814,-1.55376l3.7985,4.76294h-11.09036l3.79835,-4.71607zM0.00188,8.99264v-8.54205l3.98171,3.54639z"></path></svg>
+										support@website.com
+									</a>
+								</li>
+							</ul>
 					</div>
 					<!-- /.ba-col-12 -->
 					<div class="ba-col-12 ba-col-large-7">
@@ -562,11 +573,6 @@
 		</section>
 
 	</main>
-
-	<footer class="ba-footer">
-
-	</footer>
-	<!-- /.ba-footer -->
 	<script src="js/main.js"></script>
 	<script>
 		let menuBtn = document.querySelector('.ba-menu-toggle');
